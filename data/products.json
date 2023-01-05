@@ -1,16 +1,9 @@
 [
   {
-    "id": "2521",
-    "title": "A Book",
-    "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
-    "description": "This is an awesome book!",
-    "price": "19"
-  },
-  {
-    "title": "test",
-    "imageUrl": "421",
-    "description": "rwa",
-    "price": "2",
-    "id": "0.6242362715630274"
+    "title": "A Thousand Splendid Suns",
+    "imageUrl": "https://m.media-amazon.com/images/I/81DFcrQgjrL.jpg",
+    "description": "A Thousand Splendid Suns is a 2007 novel by Afghan-American author Khaled Hosseini, following the huge success of his bestselling 2003 debut The Kite Runner. Mariam, an illegitimate teenager from Herat, is forced to marry a shoemaker from Kabul after a family tragedy. ",
+    "price": "30",
+    "id": "0.9484462955421551"
   }
 ]
