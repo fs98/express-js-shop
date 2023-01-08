@@ -7,40 +7,17 @@
 
             <main>
                 <% if (cart.length> 0) { %>
-                    <div class="grid">
-                        <% for (let product of cart) { %>
-                            <article class="card product-item">
-                                <header class="card__header">
-                                    <h1 class="product__title">
-                                        <%= product.productData.title %>
-                                    </h1>
-                                </header>
-                                <div class="card__image">
-                                    <img src="<%= product.productData.imageUrl %>" alt="<%= product.title %>">
-                                </div>
-                                <div class="card__content">
-                                    <h2 class="product__price">$
-                                        <%= product.productData.price %>
-                                    </h2>
-                                    <h4 class="product__price">
-                                        Quantity: <%= product.qty %>
-                                    </h4>
-                                    <p class="product__description">
-                                        <%= product.productData.description %>
-                                    </p>
-                                </div>
-                                <div class="card__actions">
-                                    <form action="" method="POST">
-                                        <button type="submit" class="btn">Remove</button>
-                                        <input type="hidden" name="price" value="<%= product.productData.price %>">
-                                    </form>
-                                </div>
-                            </article>
-                            <% } %>
-                    </div>
-                    <% } else { %>
-                        <h1>No Products Found!</h1>
+                    <% for (let product of cart) { %>
+                        <h4>
+                            <%= product.productData.title %> (<%= product.qty %>)
+                        </h4>
+                        <form action="/cart-delete-product/<%- product.productData.id %>" method="POST">
+                            <button type="submit" class="btn">Remove</button>
+                            <input type="hidden" name="price" value="<%= product.productData.price %>">
+                        </form>
                         <% } %>
+                            <% } else { %>
+                                <h1>No Products Found!</h1>
+                                <% } %>
             </main>
-
             <%- include('../includes/end.ejs') %>
