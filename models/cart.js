@@ -73,8 +73,6 @@ module.exports = class Cart {
         fs.writeFile(p, JSON.stringify(updatedCart), (err) => {
           console.log(err);
         });
-      } else {
-        console.log("Not in the list.");
       }
     });
   }
