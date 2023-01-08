@@ -66,7 +66,8 @@ module.exports = class Cart {
 
         const updatedCart = {
           products: updatedCartProducts,
-          totalPrice: updatedCartTotalPrice,
+          totalPrice:
+            updatedCartProducts.length > 0 ? updatedCartTotalPrice : 0,
         };
 
         fs.writeFile(p, JSON.stringify(updatedCart), (err) => {
