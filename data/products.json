@@ -5,5 +5,19 @@
     "description": "A Thousand Splendid Suns is a 2007 novel by Afghan-American author Khaled Hosseini, following the huge success of his bestselling 2003 debut The Kite Runner. Mariam, an illegitimate teenager from Herat, is forced to marry a shoemaker from Kabul after a family tragedy. ",
     "price": "30",
     "id": "0.9484462955421551"
+  },
+  {
+    "id": "0.9694594272316177",
+    "title": "The Little Prince",
+    "imageUrl": "https://m.media-amazon.com/images/I/41Su1GeNc8L._AC_SY780_.jpg",
+    "description": "The Little Prince is a novella by French aristocrat, writer, and military pilot Antoine de Saint-Exupéry.",
+    "price": "6.90"
+  },
+  {
+    "title": "The Pearl That Broke Its Shell",
+    "imageUrl": "https://m.media-amazon.com/images/I/91WfpD-q-wL.jpg",
+    "description": "Afghan-American Nadia Hashimi's literary debut novel, The Pearl that Broke Its Shell is a searing tale of powerlessness, fate, and the freedom to control one's own fate that combines the cultural flavor and emotional resonance of the works of Khaled Hosseini, Jhumpa Lahiri, and Lisa See.",
+    "price": "22.08",
+    "id": "0.9694594272316173"
   }
 ]
