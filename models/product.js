@@ -20,7 +20,15 @@ module.exports = class Product {
     return db.query(query);
   }
 
-  static delete(productId) {}
+  static delete(id) {
+    const query = {
+      name: "delete-product",
+      text: `DELETE FROM products WHERE id = $1`,
+      values: [id],
+    };
+
+    return db.query(query);
+  }
 
   static fetchAll() {
     return db.query("SELECT * FROM products");
