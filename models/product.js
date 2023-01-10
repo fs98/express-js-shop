@@ -9,7 +9,16 @@ module.exports = class Product {
     this.price = price;
   }
 
-  save() {}
+  save() {
+    const query = {
+      // give the query a unique name
+      name: "store-product",
+      text: `INSERT INTO products (title, price, description, "imageUrl") VALUES ($1, $2, $3, $4)`,
+      values: [this.title, this.price, this.description, this.imageUrl],
+    };
+
+    return db.query(query);
+  }
 
   static delete(productId) {}
 
@@ -18,6 +27,14 @@ module.exports = class Product {
   }
 
   static findById(id) {
-    return db.query(`SELECT * FROM products WHERE id = ${id}`);
+    const query = {
+      // give the query a unique name
+      name: "fetch-product",
+      text: "SELECT * FROM products WHERE id = $1",
+      values: [id],
+    };
+
+    // return db.query(`SELECT * FROM products WHERE id = ${id}`)
+    return db.query(query);
   }
 };
